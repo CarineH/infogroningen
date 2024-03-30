@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<title>Groningen, het trots van het Noorden</title>
+<link rel="stylesheet" type="text/css" href="style/main.css">
+<meta charset="utf-8">
+<meta name="description" content="Informatie over Groningen">
+<meta name="keywords" content="groningen">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   .toggler { width: 500px; height: 200px; position: relative; }
+   #button { padding: .5em 1em; text-decoration: none; }
+   #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; background: #fff; }
+   #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+ </style>
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+ <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+ <script>
+ $( function() {
+   var state = true;
+   $( "#button" ).on( "click", function() {
+     if ( state ) {
+       $( "#effect" ).animate({
+         backgroundColor: "#aa0000",
+         color: "#fff",
+         width: 500
+       }, 1000 );
+     } else {
+       $( "#effect" ).animate({
+         backgroundColor: "#fff",
+         color: "#000",
+         width: 240
+       }, 1000 );
+     }
+     state = !state;
+   });
+ } );
+ </script>
+</head>
+<body>
+    <header>
+  <h1>Grunn</h1>
+  <ul>
+  <li class="menu"><a class="menulink" href="index.html">Home</a></li>
+  <li class="menu"><a class="menulink" href="hotspots.html">Hotspots van Groningen</a></li>
+</ul></header>
+<div>
+<h2>De geschiedenis van Groningen</h2>
+<p>
+  Bijna duizend jaar oud is het vroegst bekende document waarin de plaats Groningen wordt genoemd. Het is de giftbrief uit 1040 waarmee de Duitse koning Hendrik III de stad schonk aan de Utrechtse bisschop. Maar de geschiedenis van Groningen gaat verder terug. Al in de prehistorie was er sprake van bewoning op de Groningse zandgronden. Op deze pagina leest u een overzicht van de geschiedenis van de gemeente Groningen, van de oudste resten tot de jonge geschiedenis.
+</p>
+<br>
+</div>
+<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">Let op</h3>
+    <p>
+      Momenteel vinden er grote werkzaamheden plaats in Groningen t/m september. 20% van het normale verkeer dient af te nemen om gridlock hierbij te voorkomen. Plan je reis dus zorgzaam!
+    </p>
+  </div>
+</div>
+<button id="button" class="ui-state-default ui-corner-all">Let op</button>
+<footer id="copyright">
+© Copyright<br>
+2024 - Carine Holland
+</footer>
+</body>
+</html>

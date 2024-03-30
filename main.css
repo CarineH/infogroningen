@@ -1,0 +1,104 @@
+header {
+font-family: sans-serif;
+font-size: 13px;
+background-color: green;
+height: 120px;
+text-align: center;
+padding-top: 5px;
+padding-bottom: 20px;
+}
+
+div {
+margin-left: auto;
+margin-right: auto;
+}
+
+#button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#verberg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu{
+display: inline-block;
+height: 30px;
+width: 400px;
+padding:12px;
+color: black;
+text-align: center;
+background-color: white;
+}
+
+.menulink:hover{
+color: white;
+background-color: black;
+}
+
+.menulink{
+color: black;
+font-size: 23px;
+font-family: Arial;
+}
+
+footer{
+background-color: green;
+height: 50px;
+padding: 10px;
+}
+
+#copyright{
+padding-left: 20px;
+}
+
+body {
+background-color: #f0edeb;
+margin-left: 10px;
+margin-right: 10px;
+padding: 10px;
+text-align: center;
+}
+
+table{
+border-collapse: collapse;
+border-style: solid;
+margin: 10px;
+}
+
+th{
+background-color: black;
+color: white;
+padding: 10px 10px;
+}
+
+td{
+background-color: white;
+color: black;
+padding: 10px 10px;
+}
+
+form{
+background-color: green;
+padding: 20px;
+}
+
+button:active{
+background-color: #e8c5c3;
+color: white;
+border-radius: 8px;
+}
+
+input, textarea, button{
+display: block;
+margin: 20px;
+width: 300px;
+box-sizing: border-box;
+}
